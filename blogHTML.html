@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Technique du HTML</title>
+    <link rel="stylesheet" href="CSS/blogHTML.css">
+</head>
+
+<body>
+    <main>
+        <div id="sidebar">
+            <div id="title">
+                <h2>Documentation HTML5</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Introduction</a>
+                </li>
+                <li>
+                    <a href="#">Le Squelette HTML5</a>
+                </li>
+                <li>
+                    <a href="#">Les Paragraphe</a>
+                </li>
+                <li>
+                    <a href="#">Les Balises en Blocs</a>
+                </li>
+                <li>
+                    <a href="#">Les Balises Inline</a>
+                </li>
+                <li>
+                    <a href="#">Listes</a>
+                </li>
+                <li>
+                    <a href="#">Liens</a>
+                </li>
+                <li>
+                    <a href="#">Les Formulaires</a>
+                </li>
+                <li>
+                    <a href="#">les Tableaux</a>
+                </li>
+                <li>
+                    <a href="#">Les Media query</a>
+                </li>
+                <li>
+                    <a href="#">API HTML</a>
+                </li>
+                <li>
+                    <a href="#">Defis</a>
+                </li>
+                <li>
+                    <a href="#">Projets</a>
+                </li>
+                <li>
+                    <a href="#">References</a>
+                </li>
+            </ul>
+        </div>
+        <!-- voici pour le contenu  -->
+        <div id="contenu">
+            <h1>Introduction</h1>
+            <p>HTML est le langage de balisage standard pour la création de pages Web. <br><br>
+                <strong>Qu'est-ce que le HTML ?</strong>
+            <ul>
+                <li> HTML signifie Hyper Text Markup Language</li>
+                <li> HTML est le langage de balisage standard pour la création de pages Web</li>
+                <li>HTML décrit la structure d'une page Web</li>
+                <li> HTML se compose d'une série d'éléments</li>
+                <li>Les éléments HTML indiquent au navigateur comment afficher le contenu</li>
+                <li> Les éléments HTML étiquettent des éléments de contenu tels que "ceci est un titre", "ceci est un
+                </li>
+                <li> paragraphe", "ceci est un lien", etc.</li>
+            </ul>
+
+            <h2 style="padding:0 30px;">
+                Un document HTML simple
+            </h2>
+            <div class="forme">
+                <h2 style="padding:0 30px; padding-top: 15px;">Exemple</h2>
+                <div class="cod">
+                    <br />Exemple<br />&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;title&gt;Page
+                    Title&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br /><br />&lt;h1&gt;My First
+                    Heading&lt;/h1&gt;<br />&lt;p&gt;Mon Premier
+                    Paragraphe.&lt;/p&gt;<br /><br />&lt;/body&gt;<br />&lt;/html&gt;
+                </div>
+            </div>
+            <!-- &lt;html&gt;<br/>&lt;head&gt;<br/>&lt;meta charset=&quot;utf-8&quot; /&gt;<br/>&lt;title&gt;Emphase&lt;/title&gt;<br/>&lt;/head&gt;<br/>&lt;body&gt;<br/>&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br /&gt;<br/>Ceci est mon premier test alors &lt;em&gt;soyez indulgents&lt;/em&gt; s'il<br/>vous pla&icirc;t, j'apprends petit &agrave; petit comment cela marche.&lt;/p&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt; -->
+            <h2>
+                Exemple expliqué
+            </h2>
+            <div>
+                <ul>
+                    <li>
+                        La &lt;!DOCTYPE html&gt; declaration definit que ce document est un document HTML
+                    </li>
+                    <li>
+                        L'&lt;html&gt; element racine d'une page HTML
+                    </li>
+                    <li>
+                        L'&lt;head&gt; element contient des méta-information d'une page HTML
+                    </li>
+                    <li>
+                        L'&lt;title&gt; element specifie un titre pour la page HTML(qui s'affiche dans la barre de titre
+                        du navigateur ou dans l'onglet de la page)
+                    </li>
+                    <li>
+                        L'&lt;body&gt; element definit le corps du document et est un conteneur pour tous les contenu
+                        visible telque
+                        les titre, paragraphe, images, hyperlinks, tables, lists, etc.
+                    </li>
+                    <li>
+                        L'&lt;h1&gt; element definit un grand titre
+                    </li>
+                    <li>
+                        L'&lt;p&gt; element definit un paragraphe
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="liste">
+                <h2>Qu'est-ce qu'un element html?</h2>
+                <p>Un élement html est definie par une balise de debut,du contenu et d'une balise de fin:</p>
+
+                &lt;tagname&gt; Le contenu va ici... &lt;/tagname&gt;
+                <p>L'élément html est tout, une balise de debut et fin:</p>
+                &lt;h1&gt;Ma prémière Rubrique&lt;/h1&gt;<br>
+                &lt;p&gt;Mon premier paragraphe&lt;/p&gt; <br>
+                <table style="border: 2px solid black;">
+                    <tr>
+                        <th>Start tag</th>
+                        <th>Element content</th>
+                        <th>End tag</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>My first heading</th>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>My first paragrahe</th>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div id="remarque">
+                <h4>Remarque: Some HTML elements de HTML n'ont pas de contenu (comme l'élément &lt;br&gt;). c'est
+                    élément sont appelés élément vides les élément n'ont de balise de fin
+                </h4>
+            </div>
+            <hr>
+            <hr>
+            <h2>Listes</h2>
+            <p>
+                Les listes nous permettent souvent de mieuxstructurer notre texte et d'ordonner nos informations.
+                Nous allons découvrir ici deuxtypes de listes :
+            </p>
+            <ul>
+                <li>les listes non ordonnées ou listes à puces ;</li>
+                <li>les listes ordonnées ou listes numérotées ou encore énumérations.</li>
+            </ul>
+            <h3>Liste Non Ordonnée</h3>
+            <p>Une liste non ordonnée ressemble à ceci:</p>
+            <ul>
+                <li>Frais</li>
+                <li>Framboises</li>
+                <li>Cerises</li>
+            </ul>
+            <p>
+                C'est un système qui nous permet de créer une liste d'éléments sans notion d'ordre (il n'y a pas de «
+                premier » ni de « dernier »).
+                Créer une liste non ordonnée est très simple. Ilsuffit d'utiliser la balise
+                <code>&lt;ul&gt;</code> que l'on referme un peu plus loin avec <code>&lt;/ul&gt;</code>.
+                Commencez donc à taper ceci :
+            </p>
+            <div class="forme" style="text-align: center;padding: 10px; font-size: 20px; color:red;">
+                &lt;ul&gt;&lt;/ul&gt;
+            </div>
+            <p>
+                Notez que la liste doit être placée à l'intérieur de
+                <code> &lt;body&gt;&lt;/body&gt;</code>. À partir de maintenant, je ne mets pas tout le code de la
+                page pour rester lisible.
+                Retenez donc ces deux balises :
+            </p>
+            <ul>
+                <li><code>&lt;ul&gt;&lt;/ul&gt;</code> délimite toute la liste ;</li>
+                <li><code>&lt;li&gt;&lt;/li&gt;</code> délimite un élément de la liste (une puce).</li>
+            </ul>
+            <h2>En résumé:</h2>
+            <div class="liste">
+                Le HTML comporte de nombreuses balises qui nous permettent d'organiser le texte de notre page. Ces
+                balises
+                donnent
+                des indications comme « Ceci est un paragraphe », « Ceci est un titre », etc.
+                Les paragraphes sont définis par la balise <code>&lt;p&gt; &lt;/p&gt;</code> et les sauts de ligne par
+                la
+                balise <br />.
+                Il existe sixniveauxde titre, de <code> &lt;h1&gt; &lt;/h1&gt;</code> à
+                <code>&lt;h6&gt; &gt;/h6&gt;</code>,
+                à utiliser selon
+                l'importance du titre.
+                On peut mettre en valeur certains mots avec les balises <code>&lt;strong&gt;</code>,
+                <code>&lt;em&gt;</code>
+                et <code>&lt;mark&gt;.</code>
+                Pour créer des listes, on doit utiliser la balise <code> &lt;ul&gt;</code> (liste à puces, non ordonnée)
+                ou
+                &lt;ol&gt;(liste
+                ordonnée). À l'intérieur,
+                on insère les éléments avec une balise <code> &lt;li&gt;</code> pour chaque item.
+                <h2>Liste ordonée</h2>
+                <p>
+                    Une liste ordonnée fonctionne de la même façon, seule une balise change : il faut remplacer
+                    <code>&lt;ul&gt;&lt;/ul&gt;</code> par <code>&lt;ol&gt;&lt;/ol&gt;.</code>
+                    À l'intérieur de la liste, on ne change rien : on utilise toujours des balises
+                    <code>&lt;li&gt;&lt;/li&gt;</code> pour
+                    délimiter les
+                    éléments.
+                </p>
+            </div>
+            <h2>Les liens</h2>
+            <div class="liste">
+                <p>
+                    Au chapitre précédent, vous avez appris à créer une page HTML toute simple. D'accord, elle n'était
+                    pas
+                    franchement magnifique,
+                    mais c'était une vraie page HTML quand même.
+                    Comme vous le savez, un site web est composé de plusieurs pages. Comment faire pour aller d'une page
+                    vers une autre ? À l'aide
+                    de liens pardi ! Dans ce chapitre, nous allons justement apprendre à créer des liens entre nos
+                    pages.
+                    Je suppose que chacun d'entre vous sait ce qu'est un lien : ils'agit d'un texte sur lequel on peut
+                    cliquer pour se rendre sur une
+                    autre page.
+                    On peut faire un lien d'une page a.html vers une page b.html, mais on peut aussi faire un lien vers
+                    un
+                    autre site (par
+                    exemple, http://www.siteduzero.com). Dans les deuxcas, nous allons voir que le fonctionnement est le
+                    même.
+                </p>
+                <h2>Un lien vers autre site</h2>
+                <p>Il est facile de reconnaître les liens sur une page : ils sont écrits d'une façon différente (par
+                    défaut,
+                    en bleu et soulignés) et un
+                    curseur en forme de main apparaît lorsqu'on pointe dessus. <br>
+                    Pour faire un lien, la balise que nous allons utiliser est très simple à retenir : <a>. Il faut
+                    cependant lui ajouter un attribut, href,
+                    pour indiquer vers quelle page le lien doit conduire.
+                </p>
+            </div>
+            <div class="forme" style="text-align: center; padding-top: 15px;">
+                &lt;a href="http://www.google.com"&gt;lien vers google&lt;/&gt;
+            </div>
+            
+
+        </div>
+
+    </main>
+</body>
+
+</html>

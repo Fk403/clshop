@@ -1,0 +1,168 @@
+/* Etape2:Création du fichier css et liaison */
+/* code d'initialisation */
+*{
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    /* annuler toute les bordure */
+    box-sizing: border-box;
+    font-family: "Opens Sans", sans-serif,arial,tahoma;
+}
+#menu-lateral{
+background-color: rgb(5, 68, 104);
+width: 250px;
+height: 100%;
+padding: 20px 0;
+top: 0;
+left: 0;
+/* pour fixe un bloc */
+position: fixed;
+}
+/* design du profile  solid en trait plein et dashed en discontinu*/
+#menu-lateral #profil{
+    text-align: center;
+    color: #fff;
+}
+#menu-lateral #profil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid  rgb(32, 44, 69);
+    margin: 0 auto;
+}
+#menu-lateral #profil h3
+{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+#menu-lateral #profil p
+{
+    margin-top: -15px;
+    font-size: italic;
+}
+#section{
+    width: calc(100%-250px);
+    margin-left: 250px;
+}
+#section #topBar {
+    height: 55px;
+    background-color: rgb(32, 44, 69);
+    padding: 0 30px;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -30px;
+ 
+}
+#section #topBar a {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+#section #topBar a:hover{
+    color: lightblue;
+}
+/* Faire la mise en forme du bloc section */
+#section #banner{
+    height: 200px;
+    background-color: rgb(7, 105, 185);
+    color: #fff;
+    margin-left: -10px;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+#section #banner #trait{
+    height: 5%;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: -10px;
+    background-color: #fff;
+} 
+#section #banner #bouton{
+    font-size: 30px;
+    margin-top: 15px;
+}
+/* Mise en forme des liens  du menu lateral
+#contenu-general  #section1 img {
+     margin-left: 18%;
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 25px;
+}
+/* style des liens du menu latéral */
+#menu-lateral ul li a {
+    display: block;
+    color: #fff;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    position: relative;
+    margin-left: -50px;
+}
+#menu-lateral ul li a:hover{
+    background-color: #fff;
+    color: darkblue;
+    border-bottom: 2px solid rgb(5, 68, 104);
+}
+#menu-lateral ul li .active {
+     background-color: #fff;
+    color: darkblue;
+    border-bottom: 2px solid rgb(5, 68, 104);
+}
+/* La mise en forme de l'image du bloc1 */
+.bloc1 img {
+    margin-left: 18%;
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 15px;
+    margin-top: 25px;
+}
+/* pour faire descendre le titre du bloc1 */
+.bloc1 h2 {
+   padding-top: 40px;
+   margin: 15px;
+}
+.bloc1 p {
+    padding-bottom:35px;
+    margin-top: 15px;
+ }
+ /* la mise en forme du bloc deux */
+ #bloc2{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(20, 109, 235);
+    color: #fff;
+    padding-top: -15px;
+ }
+ #bloc2 h2{
+   padding-top: 15px;
+   margin-bottom: -15px;
+ }
+#bouton{
+    font-size: 50px;
+    margin-bottom: 15px;
+
+  
+}
+.champ_input{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+#pied-de-page  {
+    width: calc(100%-250px);
+    margin-left: 250px;
+    height: 55px;
+    background-color:rgb(32, 44, 69) ;
+}
+#pied-de-page #titre h3 {
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Mise en forme du formulaire d'inscription */
+
+
+
+
