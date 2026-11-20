@@ -101,7 +101,7 @@
     const words = [["C'EST", a, 520, 150], ['LA', b, 680, 150]];
     for (const [w, t0, y, size] of words) {
       const s = stamp(t0); if (!s) continue;
-      ctx.save(); ctx.translate(540, y); ctx.scale(s, s); txt(ctx, w, 0, 0, { size, alpha: clamp(inv(t, t0, 0.06)) }); ctx.restore();
+      ctx.save(); ctx.translate(540, y); ctx.scale(s, s); txt(ctx, w, 0, 0, { size }); ctx.restore();
     }
     const s = stamp(c);
     if (s) {
@@ -147,7 +147,7 @@
     // the ring segments, one per arpeggio note
     let reveal = 0;
     for (const n of S.logoArp) if (t >= n.t) reveal = Math.min(1, reveal + 1 / S.logoArp.length * ease.outCubic(inv(t, n.t, BEAT / 2)));
-    const sc = landed ? lerp(0.82, 1, ease.outBack(inv(t, ev.logoPop, 0.35), 3)) * (1 + 0.025 * beatKick(t)) : 0.82;
+    const sc = landed ? lerp(0.82, 1, ease.outBack(inv(t, ev.logoPop, 0.2), 2)) * (1 + 0.025 * beatKick(t)) : 0.82;
     ctx.save(); ctx.translate(cx, cy); ctx.scale(sc, sc); ctx.translate(-cx, -cy);
     ctx.save(); ctx.shadowColor = 'rgba(10,29,74,0.25)'; ctx.shadowBlur = 40; ctx.shadowOffsetY = 16;
     ctx.beginPath(); ctx.arc(cx, cy, R, 0, 6.29); ctx.fillStyle = landed ? '#fff' : 'rgba(255,255,255,0.6)'; ctx.fill(); ctx.restore();
@@ -388,8 +388,9 @@
       ctx.restore();
 
       ctx.save(); ctx.scale(k, H / 1920);
+      flash(ctx, t, ev.stamps[0], 0.7, 16);
       flash(ctx, t, ev.stamps[2], 0.5, 14);
-      flash(ctx, t, ev.logoPop, 0.6, 12);
+      flash(ctx, t, ev.logoPop, 0.95, 12);
       flash(ctx, t, ev.drop, 0.95, 9);
       for (const p of S.produits) flash(ctx, t, p.t, 0.25, 22);
       flash(ctx, t, T(4), 0.4, 18); flash(ctx, t, ev.contact, 0.4, 16);
