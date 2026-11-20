@@ -92,26 +92,26 @@
   }
 
   // ================= SCENES =================
-  // 1. HOOK — C'EST / LA / RENTRÉE !
+  // 1. HOOK — CAHIERS / FINIS ? / ON EST LÀ !
   function sceneHook(ctx, t) {
     grad(ctx, C.blue2, C.navy);
     decor(ctx, t);
     const [a, b, c] = ev.stamps;
     const stamp = (t0) => { const p = inv(t, t0, 0.14); return t < t0 ? 0 : lerp(1.7, 1, ease.outCubic(p)); };
-    const words = [["C'EST", a, 520, 150], ['LA', b, 680, 150]];
-    for (const [w, t0, y, size] of words) {
+    const words = [['CAHIERS', a, 520, 150, C.white], ['FINIS ?', b, 690, 170, C.yellow]];
+    for (const [w, t0, y, size, col] of words) {
       const s = stamp(t0); if (!s) continue;
-      ctx.save(); ctx.translate(540, y); ctx.scale(s, s); txt(ctx, w, 0, 0, { size }); ctx.restore();
+      ctx.save(); ctx.translate(540, y); ctx.scale(s, s); txt(ctx, w, 0, 0, { size, color: col }); ctx.restore();
     }
     const s = stamp(c);
     if (s) {
-      ctx.save(); ctx.translate(540, 880); ctx.scale(s, s); ctx.rotate(-0.05);
+      ctx.save(); ctx.translate(540, 900); ctx.scale(s, s); ctx.rotate(-0.05);
       brush(ctx, 0, -40, 840, 210, C.yellow, ease.outCubic(inv(t, c, 0.12)), 7, 0);
-      marker(ctx, 'RENTRÉE !', 0, 12, { size: 138, color: C.navy });
+      marker(ctx, 'ON EST LÀ !', 0, 12, { size: 124, color: C.navy });
       ctx.restore();
     }
     // tagline, word by word on the beats of bar 1
-    const tag = [['Tout pour une', 0], ['rentrée', 1], ['bien équipée', 2]];
+    const tag = [["Tout pour l'école", 0], ['et le bureau', 1], ["toute l'année", 2]];
     const y0 = 1130;
     tag.forEach(([w, bt], i) => {
       const t0 = T(1, bt); const p = pop(t, t0, 0.3);

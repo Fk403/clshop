@@ -39,7 +39,7 @@
 
   // ---------- events ----------
   const ev = {
-    stamps: [T(0, 0), T(0, 1), T(0, 2)], // "C'EST" "LA" "RENTRÉE !"
+    stamps: [T(0, 0), T(0, 1), T(0, 2)], // "CAHIERS" "FINIS ?" "ON EST LÀ !"
     tagline: T(1, 0),
     logoSweep: T(2, 0), // the ring draws itself over one bar (balafon arpeggio)
     logoPop: T(3, 0), // logo lands
