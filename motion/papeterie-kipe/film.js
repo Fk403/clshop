@@ -378,7 +378,7 @@
         sceneLogo(ctx, t);
         const u = iris(ctx, t, T(2), C.white, 0.35);
         if (u !== null) { // the hook scene shrinks away through a growing circle
-          ctx.save(); ctx.beginPath(); ctx.rect(0, 0, 1080, 1920); ctx.arc(540, 760, ease.inOutCubic(u) * 1300, 0, 6.29, true); ctx.clip('evenodd'); sceneHook(ctx, T(2) - 0.001); ctx.restore();
+          ctx.save(); ctx.beginPath(); ctx.rect(0, 0, 1080, 1920); { const ir = ease.inOutCubic(u) * 1300; ctx.moveTo(540 + ir, 760); ctx.arc(540, 760, ir, 0, 6.2832, true); } ctx.clip('evenodd'); sceneHook(ctx, T(2) - 0.001); ctx.restore();
         }
       } else if (t < T(6)) sceneCibles(ctx, t);
       else if (t < ev.breath) { const p = [...S.produits].reverse().find((q) => t >= q.t); sceneProduit(ctx, t, p); }
